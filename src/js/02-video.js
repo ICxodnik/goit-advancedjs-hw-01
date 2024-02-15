@@ -13,7 +13,6 @@ if (initSeconds) {
 
 function saveCurrentTime(seconds) {
     localStorage.setItem(timeKey, seconds);
-    console.log(seconds)
 }
 
 const saveTime = throttle(saveCurrentTime, 1000);
